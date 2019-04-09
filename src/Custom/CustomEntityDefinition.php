@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace CustomEntityTranslations\Custom;
+namespace Swag\CustomEntityTranslations\Custom;
 
-use CustomEntityTranslations\Custom\Aggregate\CustomTranslation\CustomEntityTranslationDefinition;
+use Swag\CustomEntityTranslations\Custom\Aggregate\CustomTranslation\CustomEntityTranslationDefinition;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityDefinition;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\CreatedAtField;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\Flag\PrimaryKey;

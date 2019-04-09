@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace CustomEntityTranslations\Custom\Aggregate\CustomTranslation;
+namespace Swag\CustomEntityTranslations\Custom\Aggregate\CustomTranslation;
 
-use CustomEntityTranslations\Custom\CustomEntity;
+use Swag\CustomEntityTranslations\Custom\CustomEntity;
 use Shopware\Core\Framework\DataAbstractionLayer\TranslationEntity;
 
 class CustomTranslationEntity extends TranslationEntity

@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace CustomEntityTranslations\Custom\Aggregate\CustomTranslation;
+namespace Swag\CustomEntityTranslations\Custom\Aggregate\CustomTranslation;
 
-use CustomEntity\Custom\CustomEntityDefinition;
+use Swag\CustomEntity\Custom\CustomEntityDefinition;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityTranslationDefinition;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\StringField;
 use Shopware\Core\Framework\DataAbstractionLayer\FieldCollection;

@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace CustomEntityTranslations\Custom\Aggregate\CustomTranslation;
+namespace Swag\CustomEntityTranslations\Custom\Aggregate\CustomTranslation;
 
 use Shopware\Core\Framework\DataAbstractionLayer\EntityCollection;
 

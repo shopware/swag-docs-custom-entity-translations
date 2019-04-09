@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace CustomEntityTranslations\Custom;
+namespace Swag\CustomEntityTranslations\Custom;
 
-use CustomEntityTranslations\Custom\Aggregate\CustomTranslation\CustomEntityTranslationCollection;
+use Swag\CustomEntityTranslations\Custom\Aggregate\CustomTranslation\CustomEntityTranslationCollection;
 use Shopware\Core\Framework\DataAbstractionLayer\Entity;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityIdTrait;
 

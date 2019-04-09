@@ -2,7 +2,7 @@
     "name": "swag/custom-entity-translations",
     "description": "Custom entity translation plugin",
     "version": "v1.0.0",
-    "type": "shopware-plugin",
+    "type": "shopware-platform-plugin",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,7 @@
         "shopware/platform": "dev-master"
     },
     "extra": {
-        "installer-name": "CustomEntityTranslations",
+        "shopware-plugin-class": "Swag\\CustomEntityTranslations\\CustomEntityTranslations",
         "label": {
             "de_DE": "Plugin mit einer individuellen übersetzbaren Entität",
             "en_GB": "Custom entity translation plugin"
@@ -21,6 +21,11 @@
         "description": {
             "de_DE": "Plugin mit einer individuellen übersetzbaren Entität",
             "en_GB": "Custom entity translation plugin"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Swag\\CustomEntityTranslations\\": "src/"
         }
     }
 }

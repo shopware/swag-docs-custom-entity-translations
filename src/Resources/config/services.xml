@@ -5,11 +5,11 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="CustomEntityTranslations\Custom\CustomEntityDefinition">
+        <service id="Swag\CustomEntityTranslations\Custom\CustomEntityDefinition">
             <tag name="shopware.entity.definition"/>
         </service>
 
-        <service id="CustomEntityTranslations\Custom\Aggregate\CustomTranslation\CustomEntityTranslationDefinition">
+        <service id="Swag\CustomEntityTranslations\Custom\Aggregate\CustomTranslation\CustomEntityTranslationDefinition">
             <tag name="shopware.entity.definition" />
         </service>
     </services>
