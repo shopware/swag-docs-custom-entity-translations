@@ -15,12 +15,12 @@
     "extra": {
         "shopware-plugin-class": "Swag\\CustomEntityTranslations\\CustomEntityTranslations",
         "label": {
-            "de_DE": "Plugin mit einer individuellen übersetzbaren Entität",
-            "en_GB": "Custom entity translation plugin"
+            "de-DE": "Plugin mit einer individuellen übersetzbaren Entität",
+            "en-GB": "Custom entity translation plugin"
         },
         "description": {
-            "de_DE": "Plugin mit einer individuellen übersetzbaren Entität",
-            "en_GB": "Custom entity translation plugin"
+            "de-DE": "Plugin mit einer individuellen übersetzbaren Entität",
+            "en-GB": "Custom entity translation plugin"
         }
     },
     "autoload": {
