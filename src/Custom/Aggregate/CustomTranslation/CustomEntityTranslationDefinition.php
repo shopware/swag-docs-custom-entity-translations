@@ -2,34 +2,34 @@
 
 namespace Swag\CustomEntityTranslations\Custom\Aggregate\CustomTranslation;
 
-use Swag\CustomEntity\Custom\CustomEntityDefinition;
+use Swag\CustomEntityTranslations\Custom\CustomEntityDefinition;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityTranslationDefinition;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\StringField;
 use Shopware\Core\Framework\DataAbstractionLayer\FieldCollection;
 
 class CustomEntityTranslationDefinition extends EntityTranslationDefinition
 {
-    public static function getEntityName(): string
+    public function getEntityName(): string
     {
         return 'custom_entity_translation';
     }
 
-    public static function getCollectionClass(): string
+    public function getCollectionClass(): string
     {
         return CustomEntityTranslationCollection::class;
     }
 
-    public static function getEntityClass(): string
+    public function getEntityClass(): string
     {
         return CustomTranslationEntity::class;
     }
 
-    public static function getParentDefinitionClass(): string
+    public function getParentDefinitionClass(): string
     {
         return CustomEntityDefinition::class;
     }
 
-    protected static function defineFields(): FieldCollection
+    protected function defineFields(): FieldCollection
     {
         return new FieldCollection([
             new StringField('label', 'label'),
