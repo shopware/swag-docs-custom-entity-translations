@@ -16,6 +16,11 @@ class CustomEntity extends Entity
     protected $technicalName;
 
     /**
+     * @var string
+     */
+    protected $label;
+
+    /**
      * @var CustomEntityTranslationCollection|null
      */
     protected $translations;
@@ -28,6 +33,16 @@ class CustomEntity extends Entity
     public function setTechnicalName(string $technicalName): void
     {
         $this->technicalName = $technicalName;
+    }
+
+    public function getLabel(): string
+    {
+        return $this->label;
+    }
+
+    public function setLabel(string $label): void
+    {
+        $this->label = $label;
     }
 
     public function getTranslations(): ?CustomEntityTranslationCollection
