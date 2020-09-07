@@ -13,6 +13,7 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\NotFilter;
 use Shopware\Core\Framework\Test\TestCaseBase\IntegrationTestBehaviour;
 use Shopware\Core\Framework\Uuid\Uuid;
 use Shopware\Core\System\SalesChannel\Context\SalesChannelContextFactory;
+use Swag\CustomEntityTranslations\Custom\CustomEntity;
 
 class TranslationTest extends TestCase
 {
@@ -40,12 +41,16 @@ class TranslationTest extends TestCase
             $context
         );
 
-        $result = $customEntityRepository->search(
+        /** @var CustomEntity|null $customEntity */
+        $customEntity = $customEntityRepository->search(
             (new Criteria())->addAssociation('translations'),
             $context
         )->first();
 
-        $customEntityTranslation = $result->getTranslations()->filterByLanguageId($secondLanguageId)->first();
+        static::assertNotNull($customEntity);
+        static::assertInstanceOf(CustomEntity::class, $customEntity);
+
+        $customEntityTranslation = $customEntity->getTranslations()->filterByLanguageId($secondLanguageId)->first();
 
         static::assertEquals($expected, $customEntityTranslation->getLabel());
     }
