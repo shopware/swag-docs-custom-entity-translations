@@ -11,7 +11,7 @@ class CustomEntityTranslationDefinition extends EntityTranslationDefinition
 {
     public function getEntityName(): string
     {
-        return 'custom_entity_translation';
+        return 'swag_custom_entity_translation';
     }
 
     public function getCollectionClass(): string

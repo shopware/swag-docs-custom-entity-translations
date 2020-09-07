@@ -16,7 +16,7 @@ class CustomEntityDefinition extends EntityDefinition
 {
     public function getEntityName(): string
     {
-        return 'custom_entity';
+        return 'swag_custom_entity';
     }
 
     public function getCollectionClass(): string
@@ -35,7 +35,7 @@ class CustomEntityDefinition extends EntityDefinition
             (new IdField('id', 'id'))->addFlags(new PrimaryKey(), new Required()),
             new StringField('technical_name', 'technicalName'),
             new TranslatedField('label'),
-            (new TranslationsAssociationField(CustomEntityTranslationDefinition::class, 'custom_entity_id'))->addFlags(new Required()),
+            (new TranslationsAssociationField(CustomEntityTranslationDefinition::class, 'swag_custom_entity_id'))->addFlags(new Required()),
         ]);
     }
 }

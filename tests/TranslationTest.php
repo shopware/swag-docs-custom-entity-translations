@@ -67,10 +67,10 @@ class TranslationTest extends TestCase
 
     private function getCustomEntityRepository(): EntityRepositoryInterface
     {
-        $repository = $this->getContainer()->get('custom_entity.repository');
+        $repository = $this->getContainer()->get('swag_custom_entity.repository');
 
         if (!$repository instanceof EntityRepositoryInterface) {
-            throw new \RuntimeException('Entity repository "custom_entity.repository" not found');
+            throw new \RuntimeException('Entity repository "swag_custom_entity.repository" not found');
         }
 
         return $repository;
